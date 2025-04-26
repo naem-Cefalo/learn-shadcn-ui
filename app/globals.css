@@ -53,7 +53,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.59 0.22 1);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.77 0.131 208.11);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -128,13 +128,13 @@
   h4,
   h5,
   h6 {
-    @apply font-sans font-bold text-primary;
+    @apply font-sans;
   }
   p {
-    @apply font-serif text-secondary leading-relaxed;
+    @apply font-serif  leading-relaxed;
   }
   a {
-    @apply font-serif text-accent underline hover:text-accent-foreground;
+    @apply font-serif;
   }
   blockquote {
     @apply font-serif italic text-muted border-l-4 border-muted pl-4;
@@ -144,6 +144,10 @@
     @apply list-disc list-inside;
   }
   li {
-    @apply font-serif text-foreground;
+    @apply font-serif;
   }
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(252, 0, 78, 1);
 }
