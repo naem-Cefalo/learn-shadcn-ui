@@ -18,7 +18,7 @@ export default function Home() {
         <Heading1 className="text-center lg:text-left">
           Want to Turn Social Media Into a Profitable Career?
         </Heading1>
-        <Heading1 className="text-secondary text-shadow text-center lg:text-left">
+        <Heading1 className="text-secondary text-shadow-primary text-center lg:text-left">
           Discover your way to success with Fametonic:
         </Heading1>
         <ul className="list-none font-semibold mt-4 lg:mb-8">
