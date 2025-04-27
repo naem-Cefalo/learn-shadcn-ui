@@ -8,11 +8,11 @@ import Image from 'next/image';
 const headerNavMenu = [
   {
     title: 'Home',
-    href: '/',
+    href: '#!',
   },
   {
     title: 'About',
-    href: '/about',
+    href: '#!',
   },
 ];
 
