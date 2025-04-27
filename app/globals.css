@@ -151,3 +151,28 @@
 .text-shadow {
   text-shadow: 0px 4px 4px rgba(252, 0, 78, 1);
 }
+
+.hideMenuNav {
+  height: 0;
+  opacity: 0;
+}
+.showMenuNav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 60px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  /* transform: translateY(-100%); */
+  opacity: 1;
+  animation: fadeIn 0.5s forwards;
+}

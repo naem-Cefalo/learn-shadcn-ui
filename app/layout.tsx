@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Urbanist, Figtree } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/ui/Header';
+import Alert from '@/components/ui/Alert';
 
 const UrbanistSans = Urbanist({
   variable: '--font-geist-sans',
@@ -27,7 +28,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${UrbanistSans.variable} ${figtree.variable} antialiased`}>
+        <Alert
+          className={
+            'lg:text-2xl text-base font-extrabold text-center sticky top-0 z-50 mb-5'
+          }>
+          <span className="text-secondary">🚀 FRESH BEGINNINGS SALE:</span>
+          Extra 25% OFF, Limited Spots - start your journey today!
+        </Alert>
         <Header />
+
         {children}
       </body>
     </html>
